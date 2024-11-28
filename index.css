@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    position: relative;
+}
+
+main {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 85px;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
+#picture {
+    display: inline-block;
+    position: relative;
+    right: 20px;
+}
+
+#login {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    position: relative;
+    right: 40px;
+}
+
+#login > div {
+    width: 350px;
+    vertical-align: middle;
+    border: 1px solid #dbdbdb;
+}
+
+#login > div > input {
+    height: 35px;
+    margin: 3px;
+    width: 75%;
+    border: 1px solid #dbdbdb;
+    padding: 0 7px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    outline: none;
+}
+
+#login > div > button {
+    margin: 10px;
+    width: 75%;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 2rem;
+    opacity: 0.5;
+}
+
+#login > #get > a > img {
+    margin: 5px;
+    width: 150px;
+}
+
+#top > img {
+    margin: 35px;
+    height: 50px;
+}
+
+#top {
+    background-color: white;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+#phoneScreen {
+    height: 436px;
+    width: 247px;
+    position: absolute;
+    top: 95px;
+    left: 147px;
+    border-radius: 5px;
+    background-size: cover;
+    background-color: white;
+    border: 3px solid #353434;
+    animation-name: screenChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes screenChange {
+    0% {background-image: url(https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg);}
+    25% {background-image: url(https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg);}
+    50% {background-image: url(https://www.instagram.com/static/images/homepage/screenshot3.jpg/f0c687aa6ec2.jpg);}
+    75% {background-image: url(https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg);}
+    100% {background-image: url(https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg);}
+}
+
+#bottom {
+    margin: 10px 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 14px;
+}
+
+#login > #get {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#facebook {
+    color: #385185;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#facebook > a > img {
+    width: 16px;
+    vertical-align: middle;
+    margin: 0 7px;
+}
+
+#login > #top > p {
+    margin: 15px;
+}
+
+#forgot {
+    color: #00376b;
+    font-size: 12px;
+}
+
+#get > p {
+    margin: 10px;
+}
+
+#bottom a {
+    color: #0095f6;
+}
+
+footer {
+    background-color: #fafafa;
+    color: #8e8e8e;
+    font-size: 12px;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer > div {
+    margin: 15px 0;
+}
+
+footer > div > a {
+    margin: 8px;
+}
+
+hr {
+    position: relative;
+    top: 5.6%;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #dbdbdb;
+    z-index: 0;
+    opacity: 0.75;
+}
+
+#or {
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  width: 15%;
+  z-index: 2;
+}
+
+#error {
+    display: none;
+    color: red;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#line {
+    position: absolute;
+    top: 275px;
+}
